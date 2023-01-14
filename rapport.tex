@@ -1,25 +1,29 @@
-%% Time-stamp: <2023-01-09 21:35:45 stefan>
+%% Time-stamp: <2023-01-14 15:16:59 stefan>
 
 \documentclass[a4paper,swedish]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}    %% annars fungerar inte klipp-och-klistra från PDF självt
+\usepackage{stdclsdv}
+\usepackage{romannum}
+
 \usepackage{babel}
 \usepackage[a4paper,top=2cm,bottom=2cm,left=1.5cm,right=1.5cm]{geometry}
+
 \usepackage{graphicx}
+
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-%%\usepackage{titlesec}
-%%\titleformat{\section}{}{}
+\usepackage[style=mla,babel=hyphen,backend=biber]{biblatex}
+
 \usepackage{tabularx}
 \title{Rapport inom el-säkerhet och el-materiel}
-\author{Stefan}
-\author{Oscar}
+\author{Oscar Lindgren\\Stefan Niskanen Skoglund}
 
 \usepackage{fancyhdr}
 \setlength{\headheight}{37pt}
 % \addtolength{\topmargin}{-22pt}
-\fancyhf[LH]{Stefan Niskanen Skoglund\\Oscar}
+\fancyhf[LH]{Oscar Lindgren\\Stefan Niskanen Skoglund}
 \fancyhf[RH]{}
 \pagestyle{fancy}
 
@@ -30,9 +34,9 @@
 \setcounter{section}{1}
 \section{Vad är det som påverkar skadeverkan vid strömgenomgång?} \label{sec:strömgenomgång}
 
-Skadan och dess svårighet beror hur på strömstyrkan och hur länge kroppen är utsatt strömpåverkan.
+Skadan och dess svårighet beror hur på strömstyrkan och hur länge kroppen är utsatt för strömpåverkan.
 Strömpåverkan kan vara antingen att strömmen passerar mindre eller större del av kroppen eller att kroppen
-utsätts för en ljusbåge.
+utsätts för verkan av en ljusbåge.
 
 Om man har haft en modelljärnväg, så kan man med två fingrar på samma hand ta på återledaren och mittledaren (Märklins mittledareräl) och känna en svag
 vibration. Den strömmen är pga den låga spänningen och hudens höga resistivitet $< 1 mA$
@@ -42,19 +46,36 @@ Strömmen ger upphov till vibrationskänslan.
 \section{Vilken långsiktig skada uppstår?}\label{sec:permanent_skada}
 
 Nekrosis dvs celldöd. En skada som även har långtidseffekter dvs att exempelvis nervceller
-fortsätter att då även en lång tid efter den akuta skadan.
+fortsätter att dö även en lång tid efter den akuta skadan.
 
 \setcounter{section}{5}
 \section{Vilka är skyddsjordledarens PE två huvudfunktioner?}\label{sec:skyddsjordsledarens_funktioner}
 
-Skyddsjordledaren ska ha ge en garanterad förbindelse mellan en apparats hölje så att om apparatens konstruktion
-med avseende på elektrisk isolering mellan dess innamäte och höljet skadas, att strömmen
+\begin{itemize}
+\item Skyddsjordledaren ska ha ge en garanterat kortslutande förbindelse mellan en apparats hölje
+och transformatorns neutralpunkt så att om apparatens konstruktion
+med avseende på elektrisk isolering mellan dess innanmäte och höljet skadas, att strömmen
+blir så hög så att säkringen kommer att lösa ut inom en viss tidrymd. Strömmen får inte stiga
+över ett visst maxvärde.
+\item Garantera att utsatta delar på alla apparater inom en anläggning samtliga har samma potential
+\end{itemize}
 
 \setcounter{section}{7}
-\section{Vilka varianter finns det på diazedsäkringen?}\label{sec:diazedvarianter}
+\section{Vilka varianter finns det på DIAZED-säkringar?}\label{sec:diazedvarianter}
 
 Tre olika diametrar av själva säkringskroppen med till var sin passande hylsa.
-Hylsorna har olika diameter och gängdimension (Edison-gänga)
+Hylsorna har olika diameter och gängdimension (Edison-gänga). Normalt förekommand dimensioner är :
+\begin{itemize}
+\item  DI (E14)
+\item DII (E27)
+\item DIII (E33)
+\end{itemize}
+
+Det finns två större typer av DIAZED-säkringar men de är i Sverige mycket ovanliga\footnote{\url{https://de.wikipedia.org/wiki/Schmelzsicherung}}
+\begin{itemize}
+\item DIV (E40)
+\item DV (E57)
+\end{itemize}
 
 \setcounter{section}{9}
 \section{Vilken färg på signalpärlan har en 10 A diazedsäkring?}\label{sec:diazed_10A}
@@ -81,14 +102,16 @@ den genomgående strömmen.
 
 Klass B.
 
-18\setcounter{section}{17}
+\setcounter{section}{17}
 \section{Vad ska det finnas vid varje central?}\label{sec:vad_ska_finnas_vid_en_central}
 
 En gruppförteckning
 
 \setcounter{section}{19}
 \section{Vad vill man åstadkomma med skyddsutjämning?}\label{sec:skyddsutjamning}
-Personskydd
+
+Personskydd och i exv djurstallar iom att hästar och kor är mycket känsliga för en liten potentialskillnad
+mellan delar av ett golv eller andra konstruktioner, att inte skrämma dem med något obehagligt
 
 
 \setcounter{section}{21}
@@ -96,7 +119,8 @@ Personskydd
 
 Elinstallationens skyddsledare dvs husets normala gul-gröna skyddsledare
 
-Inkommande jordtag om huset har ett eget jordtag (praktiskt sett ett krav att ett sådant finns.)
+Inkommande jordtag om huset har ett eget jordtag (praktiskt sett ett krav att ett sådant finns i ett system
+där huvudjordningsskena används.)
 
 \setcounter{section}{23}
 \section{Potentialutjämningsledarens maximala area?}\label{sec:potentialutjamningarea}
@@ -187,7 +211,7 @@ En trasmatta iom att den är kompakt fungerar i nödfall.
 
 Företagsledningen -- denna ska:
 \begin{enumerate}
-\item Implementera och tillse att företaget följer sitt egenkontrollprogram
+\item Implementera och tillse att företagets anställda egenkontrollprogramet
 \item Ha en juridisk uppgörelse av någon typ med en auktoriserad elinstallatör där auktorisationen
   gäller för företagets arbetsområde
 \item Den auktoriserade personen stöttar företagsledningen i dess arbete med egenkontrollprogrammet
@@ -196,8 +220,18 @@ Företagsledningen -- denna ska:
 \setcounter{section}{49}
 \section{Vad måste alla personer som utför elinstallationsarbete ha?}
 
+Nödvändig kunskap för att :
+
+\begin{enumerate}
+\item Kunskap om vad som är risker för person- och egendoms-skada
+\item Ha kunskap om vad som kan bli fel om man gör en felaktig åtgärd
+\item Kunskap hur man använder en specifik skyddsåtgärd
+\end{enumerate}
+
 \setcounter{section}{51}
 \section{Vad innebär kravet på registrering för elsäkerhetsverket?}
+
+Att Elsäkerhetsverket får information om vilka företag som de får utöva tillsyn av.
 
 \setcounter{section}{53}
 \section{Vad måste varje elinstallationsföretag ha?}\label{sec:designated_person}
@@ -209,7 +243,11 @@ Företagsledningen -- denna ska:
 \setcounter{section}{55}
 \section{Vilket ansvar har anläggningsinnehavaren enligt elsäkerhetsverket?}\label{sec:innehavarens_ansvar}
 
-Allt.
+\begin{enumerate}
+  \item Att fortlöpande kontrollera att anläggningen har ett tillfredsställande skydd mot person- och egendoms-skada
+  \item Att kontrollera att utföraren av ett arbete i anläggningen utförs av personer som har de kunskaper och färdigheter
+    som krävs för att garantera att arbetet inte ger en risk för person- eller egendomsskada
+\end{enumerate}
 
 \setcounter{section}{57}
 \section{Vad är skillnaden mellan en lågspänningsanläggning och en högspänningsanläggning?}
@@ -263,25 +301,40 @@ IN Eltest. IN iom att EIO har bytt namn till Installatörsföretagen.
 \setcounter{section}{0}
 \section{Hur vet man vilket elmateriel man ska välja till en elinstallation?}
 
+Installatören väljer kapslingar, kopplingsdon (vägguttag) och brytare efter vilket elmiljö (område)
+de ska vara i och deras användning. Olika elmiljöer ställa olika minimum-krav på materialets IP-klassning.
+
+Ett miljökrav kan vara om det är en förskola där barn kan försöka öppna lådor eller ett slakteri där
+reglerna för städning ställer krav på renspolning med högtryckstvättar. Förskoleexemplet kan då innebära att
+man ställer krav att materialen ska ha minst klass IP4x, dvs att det inte går att utifrån tränga in i
+kapslingen med hjälp av en lös elektrisk tråd.
+
+För slakteriexemplet kan en lämplig minsta klass för materialen var IPx6K, dvs skyddad för direkt
+exponering mot kraftiga högtrycksvattenstrålar under minst 3 minuter.
+
 Kablar väljs antingen i förväg i ritningsskedet av konstruktör eller av
 elektriker (eller eventuellt dennes arbetsledning.)
 
 Konstruktören behöver bland annat ha uppgifter från nätägaren om vissa karakteristika
 för det lokala nätet.
 
-Installatören väljer kapslingar, kopplingsdon (vägguttag) och brytare efter vilket elmiljö (område)
-de ska vara i och deras användning. Olika elmiljöer ställa olika minimum-krav på materialets IP-klassning.
-
 \setcounter{section}{2}
 \section{Vad betyder IP?}
 
+IP = Ingress Protection code.
 Den grad av skydd mot direkt och indirekt kontakt med strömförande delar som en kapsling ger.
 
 \setcounter{section}{4}
 \section{Vad anger första siffran?}
 
+Skyddsgraden mot inträgning med olika fasta objekt. Exv skyddsklass 0 saknar helt beröringsskydd,
+medan klass 2 innebär att ett ensamt finger inte kan komma åt strömförande delar.
+
+Nivå 6, då är kapslingen dammtätt.
+
 \setcounter{section}{6}
 \section{Vilken kapslingsklass ska elmateriel om tillhör ”torra utrymmen” ha?}
+
 
 \setcounter{section}{8}
 \section{Vilken kapslingsklass ska elmateriel ha i vissa delar av badrum, grovkök och
@@ -306,10 +359,17 @@ Kontroll av magnetiska fält runt om kablen
 \setcounter{section}{14}
 \section{Vad betyder EKK?}
 
-Enkelkardelig dvs varje ledare består av en massiv ledare
+Enkelkardelig dvs varje ledare består av en massiv ledare där ledareisoleringen är PVC
 
 \setcounter{section}{16}
 \section{Vad anger första bokstaven?}
+
+Om ledarna i kabel är :
+\begin{enumerate}
+\item E = enkelkardelig, en enda massiv tråd
+\item F = fåkardelig, ledaren består av några tiotals trådar
+\item R = rikkardlig, många tunna trådar
+\end{enumerate}
 
 \setcounter{section}{18}
 \section{Tredje bokstaven?}
@@ -335,6 +395,7 @@ Den nuvarande CPR-klassningen differentierar mellan:
 \section{Till vad används kraftkablar?}
 
 Överföring och distribution av el, minsta area i varje tråd är $2,5 mm^2$
+
 \setcounter{section}{24}
 \section{Till vad används anslutningskablar?}
 
