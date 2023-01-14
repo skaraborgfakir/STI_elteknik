@@ -1,4 +1,4 @@
-%% Time-stamp: <2023-01-14 15:19:42 stefan>
+%% Time-stamp: <2023-01-14 16:11:47 stefan>
 
 \documentclass[a4paper,swedish]{article}
 
@@ -319,11 +319,16 @@ kapslingen med hjälp av en lös elektrisk tråd.
 För slakteriexemplet kan en lämplig minsta klass för materialen var IPx6K, dvs skyddad för direkt
 exponering mot kraftiga högtrycksvattenstrålar under minst 3 minuter.
 
-Kablar väljs antingen i förväg i ritningsskedet av konstruktör eller av
+Kablar väljs antingen i förväg i ritningsskedet av konstruktör utgående bland annat från
+uppgifter från nätägaren om vissa karakteristika för det lokala nätet eller av
 elektriker (eller eventuellt dennes arbetsledning.)
 
-Konstruktören behöver bland annat ha uppgifter från nätägaren om vissa karakteristika
-för det lokala nätet.
+Uppgifterna om det lokala nätet är dess lokala impedans, vilket är en uppgift som
+påverkar en serviskabels maximala längd för en viss area.
+Detta för att garantera utlösningsvillkoren för huvudsäkringar och jordfelsbrytare.
+
+Har man ett starkt nät med kapacitet att ge mycket ström (kort kabel från närmaste transformator)
+så ställs det högre krav på jordfelsbrytaren.
 
 \setcounter{section}{2}
 \section{Vad betyder IP?}
@@ -361,7 +366,10 @@ I de elmiljöerna där det bedöms att utrustningen kan bli direkt överspolade 
 \setcounter{section}{12}
 \section{Varför förser man kablar med en skärm av tex aluminiumfolie?}
 
-Kontroll av magnetiska fält runt om kablen
+Kontroll av magnetiska fält runt om kabeln och möjligt att använda den vid kabelsökning
+och provning och felsökning av kabeln. Det ställs exv krav på isolationsmätning av signalkablar.
+Vid den mätningen så kan man lägga en hög spänning på skärm för att kontrollera isoleringen
+mellan den och trådarna (ansluten utrustning till kabeln kopplas bort från den först.)
 
 \setcounter{section}{14}
 \section{Vad betyder EKK?}
@@ -380,6 +388,8 @@ Om ledarna i kabel är :
 
 \setcounter{section}{18}
 \section{Tredje bokstaven?}
+
+
 
 \setcounter{section}{20}
 \section{Vad gäller i den nya CPR-klassningen för brandskydd?}
