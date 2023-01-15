@@ -1,4 +1,4 @@
-%% Time-stamp: <2023-01-15 16:14:17 stefan>
+%% Time-stamp: <2023-01-15 17:58:36 stefan>
 
 \documentclass[a4paper,swedish]{article}
 
@@ -34,7 +34,8 @@
 
 \section{Vilka två grupper indelas elolycker i ?}\label{sec:q_1}
 
-Finns lite olika svar på denna fråga, men det jag har fått fram är tekniskt fel samt arbetsfel, sen kan man också tolka frågan
+Finns lite olika svar på denna fråga, men det jag har fått fram är tekniskt fel samt arbetsfel, sen kan man
+också tolka frågan
 vilken som är de 2 vanligaste elolyckorna, dessa enligt statistiken är strömgenomgång som ligger på 91 \%
 år 2020. Resterande är ljusbåge.
 
@@ -74,25 +75,28 @@ en knytpunkt för all el i kretsen.
 
 Grön-gul
 
+\section{när används snabba respektive tröga diazedsäkringar}
+\label{sec:q_9}
+
+Dessa används främst i äldre hus innan dvärgbrytare kom till.
+
+Snabba diazedsäkring
+Snabb säkring menas att det finns en tunn tråd i säkringen som skall brinna av vid 0,4s när systemet blir överbelastat.
+
+I en trög glassäkring så finns ett kylande material som exv kvartssand som skall göra att säkringen tar
+längre tid att smälta än den snabba.
+
 \section{Vilka är skyddsjordledarens PE två huvudfunktioner?}\label{sec:skyddsjordsledarens_funktioner}
 
-<<<<<<< HEAD
 \begin{itemize}
-\item Skyddsjordledaren ska ha ge en garanterat kortslutande förbindelse mellan en apparats hölje
+\item Skyddsjordledaren ska ge en garanterat kortslutande förbindelse mellan en apparats hölje
 och transformatorns neutralpunkt så att om apparatens konstruktion
 med avseende på elektrisk isolering mellan dess innanmäte och höljet skadas, att strömmen
-blir så hög så att säkringen kommer att lösa ut inom en viss tidrymd. Strömmen får inte stiga
-över ett visst maxvärde.
-\item Garantera att utsatta delar på alla apparater inom en anläggning samtliga har samma potential
+blir så hög så att säkringen kommer att lösa ut inom en bestämd kort tidrymd. Strömmen får under tiden
+inte stiga över ett visst maxvärde.
+\item Garantera att utsatta del
+ar på alla apparater inom en anläggning samtliga har samma potential
 \end{itemize}
-=======
-Skyddsjordledaren ska ha ge en garanterad förbindelse mellan en apparats hölje och transformatorns nollpunk
-så att om apparatens konstruktion
-med avseende på elektrisk isolering mellan dess innamäte och höljet skadas, att den resulterande strömmen
-kommer att förstöra säkringen inom en kort tidsrymd och därmed bryta strömmen.
-
-Garantera att höljen på apparater inom en anläggning kommer att ha samma potential
->>>>>>> github/master
 
 \setcounter{section}{7}
 \section{Vilka varianter finns det på DIAZED-säkringar?}\label{sec:diazedvarianter}
@@ -116,13 +120,20 @@ Det finns två större typer av DIAZED-säkringar men de är i Sverige mycket ov
 
 Röd
 
-\setcounter{section}{11}
+\section{Vilken färg på signal pärlan har en 16a diazedsäkring}
+\label{sec:q_11}
+Grå
+
 \section{Vad menas med en dvärgbrytares märkkortslutningsbrytförmåga?}\label{sec:RCD_short_interrupt}
 
 Över vilken kortslutningsström dvärgbrytaren inte längre är garanterad att klara av att bryta
 den genomgående strömmen.
 
-\setcounter{section}{13}
+\section{Vilka storleksklasser finns det på dvärgbrytares märkkortslutningsbrytförmåga }
+\label{sec:q_13}
+
+Den maximala brytförmågan skall fullfölja skyddet utan skador på omgivningen. Efter den fullföljda brytningen med strömmen så kan det finns begränsningar på dess funktionsduglighet.
+
 \section{Vilka klasser delas dvärgbrytare in beroende på deras tröghet?}\label{sec:RCD_classes}
 
 \begin{enumerate}
@@ -131,46 +142,82 @@ den genomgående strömmen.
 \item C
 \end{enumerate}
 
-\setcounter{section}{15}
+\section{Vilken klass på dvärgbrytaren ska matningen till belysning, vägguttag, kyl och frys ha ?}
+\label{sec:q_15}
+
+Typ B dvärgbrytare skall räcka för ett vanligt hushåll.
+
 \section{Vilken klass ska det vara till motorer, mikrovågsugn och centraldammsugare?}\label{sec:RCD_motordrift}
 
 Klass B.
 
-\setcounter{section}{17}
+\section{När använder man knivsäkringar}
+\label{sec:q_17}
+
+Används främst för större anläggningar där det i normala fall ligger mellan 63-800 ampere. Denna är populär då den besitter ett mycket hög begränsningsförmåga och reagerar snabbt vid en kortslutning. Den är relativt enkel att byta ut med tanke på dess stora förmåga att leda ström. Det krävs dock en speciell licens för att kunna jobba med dessa.
+
 \section{Vad ska det finnas vid varje central?}\label{sec:vad_ska_finnas_vid_en_central}
 
 En gruppförteckning
 
-\setcounter{section}{19}
+\section{Vad innebär potentialutjämning. }
+\label{sec:q_19}
+
+Det innebär att den förbinder olika ledande system som kan sitta på olika spänningsdifferenser som i sin tur kommer att reducera differenser avsevärt, denna kommer i sin tur anslutas till jord och med det bildar en optimal funktion. Denna skall skydda dina apparater vid tillexempel åska.
+
 \section{Vad vill man åstadkomma med skyddsutjämning?}\label{sec:skyddsutjamning}
 
 Personskydd och i exv djurstallar iom att hästar och kor är mycket känsliga för en liten potentialskillnad
 mellan delar av ett golv eller andra konstruktioner, att inte skrämma dem med något obehagligt
 
-\setcounter{section}{21}
+\section{Vad är skillnaden mellan skyddsutjämning och funktionsutjämning?}\label{sec:q_21}
+
+Potentialutjämningen är ett samlat begrepp för skyddsutjämning samt funktionsutjämning.
+Skyddsutjämningen är till för att skydda mot elchocker och funktionsutjämningen menas att det skall skydda och säkra en funktion inom kretsen.
+
 \section{Vad ska anslutas till huvudjordningsskenan ?}\label{sec:huvudjordningsskenan}
 
 Elinstallationens skyddsledare dvs husets normala gul-gröna skyddsledare
 
 Inkommande jordtag om huset har ett eget jordtag (praktiskt sett ett krav att ett sådant finns i ett system där huvudjordningsskena har använts)
 
-\setcounter{section}{23}
+\section{Vilken area ska potentialutjämningsledaren ha?}
+\label{sec:q_23}
+
+Det är viktigt att denna uppfyller minimikraven i starkströmsföreskrifterna §547,1) detta menas att det skall alltid finnas en area som är minst halva arean av den största skyddsledaren på installationen, det får dock vara som minst 6mm2.
+
 \section{Potentialutjämningsledarens maximala area?}\label{sec:potentialutjamningarea}
 
 Elinstallationens skyddsledare dvs husets normala gul-gröna skyddsledare
 
 Inkommande jordtag om huset har ett eget jordtag (praktiskt sett ett krav att ett sådant finns.)
 
-\setcounter{section}{25}
+\section{Vilken färg får inte ledaren som används för funktionsutjämning ha?}
+\label{sec:q_25}
+
+Grön-gul
+
 \section{Vilka är potentialutjämningens två uppgifter?}\label{sec:potentialutjamningsuppgifter}
 
-\setcounter{section}{27}
+
+\section{Hur kan man öka person- och brandsäkerheten i en elanläggning?}
+\label{sec:q_27}
+
+Ha en väl jordad anläggning. Ha en väl dokumenterad anläggning med uppdaterade och korrekta ritningar. Alltid finnas en brandsläckare vid elskåpen. Ha på sig korrekta skyddskläder samt använda korrekta verktyg.
+
+
 \section{Hur fungerar en jordfelsbrytare?}\label{sec:RCD_working}
 
 Den jämför igenomgående strömstyrka med den återgående. Är differensen högre än utlösningsvillkoret
 (30 mA exv) så bryts strömmen.
 
-\setcounter{section}{29}
+\section{Vad skyddar jordfelsbrytaren mot?}\label{sec:q_29}
+
+Överbelastning av systemet, tjuv-el när en ledningen inte är hel och el kan hoppa till närmaste strömförande föremål.
+Systemet fungerar på följande sätt, Fas och neutralledarna utgör tillsammans en sluten krets som går obehindrat med en ström lika med noll. Dessa skall i sin tur gå igenom jordfelsbrytarens summaströmtransformator , denna kommer känna igen om det skulle uppstå någon typ av läckström till jord. Denna läckströmen skulle i sin tur gå direkt till jord utan att passera transformatorn, summan i strömkretsen skulle då därför inte vara noll längre. Detta gör att ledningen skulle gå. Det finns dock problem med detta, detta system skyddar bara mot överledning till jord, alltså inte om strömmen skulle passera en kropp från tillexempel fas till neutral eller fas till fas.
+
+
+
 \section{I vilka system fungerar en jordfelsbrytare?}\label{sec:RCD_systems}
 
 TN-C och TN-S, skyddsledaren i anläggningen och ledaren för återgångsströmmen måste i anläggningen vara åtskilda.
@@ -178,22 +225,38 @@ TN-C och TN-S, skyddsledaren i anläggningen och ledaren för återgångsströmm
 Det är viktigt att för de belastningar som matas igenom jordfelsbrytaren, att återgångsströmmen från alla de och
 bara de går igenom brytaren.
 
-\setcounter{section}{31}
+\section{Vid vilken felström löser en jordfelsbrytare för personskydd?}
+\label{sec:q_31}
+
+Överbelastning av amp i säkringen, när kretsen inte är helt sluten och det finns ledningar som är trasiga där elen hoppar mellan strömförande föremål och bryter summaströmmens nolla.
+
 \section{Hur snabbt löser den ut?}\label{sec:RCD_how_fast}
 
 Kortare tid än periodtiden - för 50 Hz  20 ms.
 
-\setcounter{section}{33}
+\'{Vilken utlösningsström bryter jordfelsbrytaren ut vid brandskydd?}
+\label{q_33}
+
+Typ B med en utlösare på 300 mA
+
 \section{Vilka olika klasser finns det på jordfelsbrytare?}\label{sec:RCD_klasser}
 
-\setcounter{section}{35}
+\section{Vilka olika utförande finns det på jordfelsbrytare?}
+\label{sec:q_35}
+
+Det finns  främst 2 stycken som används i dagens samhälle, den äldre varianten där med diazedsäkringar med porslin där du måste in manuellt för att byta en säkring och dagens nya system med dvärgsäkringar.
+
 \section{Hur ofta bör man motionera jordfelsbrytaren?}\label{sec:motionering_RCD}
 
 Orsaken är att man vill kontrollera att brytaren löser vid fel, brytaregapet inuti kan vara skadat exempelvis.
 
 Intervallet brukar anges till en gång i halvåret (förslagsvis i samband med övergång till och från sommartid.)
 
-\setcounter{section}{37}
+\section{Vad skyddar en jordfelsbrytare inte emot?}
+\label{sec:q_37}
+
+Om du skulle vidröra en levande elledning så elen inte går genom en jordad ledning så kommer inte jfb utlösas.
+
 \section{Vilka tre punkter måste man beakta vid säkerställande att en anläggning är
   spänningslös vid ett arbete?}
 
@@ -203,7 +266,11 @@ Intervallet brukar anges till en gång i halvåret (förslagsvis i samband med �
 \item Spänningsfrihetskontroll, mät att spänningen är borta (och kontrollera att mätinstrumentet är helt både innan och efteråt.)
 \end{enumerate}
 
-\setcounter{section}{39}
+\section{Vilka arbetsuppgifter omfattar Heta arbeten?}
+\label{sec:q_39}
+
+Levande arbeten med el.
+
 \section{Vilka personer är inblandade när Heta arbeten utförs?}\label{sec:heta_arbeten_roller}
 
 \begin{enumerate}
@@ -213,10 +280,18 @@ Intervallet brukar anges till en gång i halvåret (förslagsvis i samband med �
 
 Tillståndsansvariges tillstånd måste om arbetet är bedömt som brandfarligt ge sitt tillstånd till att påbörja arbetet.
 
-\setcounter{section}{41}
+\section{Vad menas med ex-klassat område?}
+\label{sec:q_41}
+
+Det är explosionsfarliga områden, där det finns koncentrerat mängd brandfarliga ämnen.
+
 \section{Vad är grundtanken med utrustningar som är placerade i riskområden?}
 
-\setcounter{section}{43}
+\section{Vad krävs det för att brand ska uppstå?}
+\label{sec:q_43}
+
+Värme, luft, material som kan ta eld, gnista.
+
 \section{Vilka klasser klassas brandsläckare enligt den europeiska standarden SS EN3?}
 
 \begin{enumerate}
@@ -227,7 +302,11 @@ Tillståndsansvariges tillstånd måste om arbetet är bedömt som brandfarligt 
 \item F -- avsedd för brand i oljor
 \end{enumerate}
 
-\setcounter{section}{45}
+\section{Till vilken typ av brand används respektive klassad brandsläckare?}
+\label{sec:q_45}
+
+Du skall använda dig av pulversläckare, detta används då detta inte kan leda ström.
+
 \section{Vilken släckningsutrustning är bra att ha hemma i sin bostad?}\label{sec:slackutrustning}
 
 \begin{enumerate}
@@ -238,7 +317,11 @@ Tillståndsansvariges tillstånd måste om arbetet är bedömt som brandfarligt 
 
 En trasmatta iom att den är kompakt fungerar i nödfall.
 
-\setcounter{section}{47}
+\section{Vad är det enligt elsäkerhetsverkets föreskrifter och arbetsmiljölagen alla ska ha som arbetar där det finns en elektrisk fara?}
+\label{sec:q_47}
+
+Alla som jobbar på platsen skall ha tagit del av en så kallad elsäkerhetsplanering, denna tas fram av en som har kunskap om anläggningen och dess utformning, vilka typer av risker det finns. Det är även viktigt att du som upphandlare kan försäkra dig om att företaget du har anlitat är godkända av elsäkerhetsverket för att kunna utföra elinstallationer.
+
 \section{Vem är det som bär det fulla ansvaret för de installationsarbeten som anställda utför?}\label{sec:ansvar_elarbeten}
 
 Företagsledningen -- denna ska:
@@ -249,7 +332,25 @@ Företagsledningen -- denna ska:
 \item Den auktoriserade personen stöttar företagsledningen i dess arbete med egenkontrollprogrammet
 \end{enumerate}
 
-\setcounter{section}{49}
+\section{Vilka olika typer av auktorisationer finns det?}
+\label{sec:q_49}
+
+Från 2017 finns det nu 3 stycken auktorisationer A, AL samt B
+
+A menas fullständig auktorisation, detta omfattar all typ av elinstallationsarbete.
+
+AL auktorisation för lågspänning. Med denna så får du jobba med lågspänning inom elnätverket.
+
+B Begränsad auktorisation
+
+-Här får du jobba med lågspänningsanläggningar och dess befintliga  gruppledningar.
+
+-Dessa är installera och flytta ljusarmaturer, koppla el genom uttag med tillhörande kablar.
+
+-Fast anslutna elektrisk utrustning som redan förbrukar el.
+
+-Koppla loss redan kopplade elektrisk utrustning.
+
 \section{Vad måste alla personer som utför elinstallationsarbete ha?}
 
 Nödvändig kunskap för att :
@@ -260,19 +361,36 @@ Nödvändig kunskap för att :
 \item Kunskap hur man använder en specifik skyddsåtgärd
 \end{enumerate}
 
-\setcounter{section}{51}
+\section{Var ska företaget registrera sig när man utför elinstallationsarbete på någon annans anläggning?}
+\label{sec:q_51}
+
+De måste registrera sig hos elsäkerhetsverket.
+
 \section{Vad innebär kravet på registrering för elsäkerhetsverket?}
 
 Att Elsäkerhetsverket får information om vilka företag som de får utöva tillsyn av.
 
-\setcounter{section}{53}
+\section{Vad ska egenkontrollprogrammet hos ett elinstallationsföretag innehålla?}
+\label{sec:q_53}
+
+De måste innehålla,
+-Elinstallationsverksamheten i företaget och orginisationen.
+- Rutiner vid utförande av elintallationsarbete.
+-fortlöpande arbete med egenkontrollen.
+
 \section{Vad måste varje elinstallationsföretag ha?}\label{sec:designated_person}
 
 \begin{enumerate}
 \item Ett egenkontrollprogram
 \end{enumerate}
 
-\setcounter{section}{55}
+\section{Vem är anläggningsinnehavare?}
+\label{sec:q_55}
+
+Individen som äger verksamheten eller byggnaden där ett el arbete görs.
+
+Du kommer få ansvara så att anläggningen är säker och inte kan orsaka skador på människor och egendom.
+
 \section{Vilket ansvar har anläggningsinnehavaren enligt elsäkerhetsverket?}\label{sec:innehavarens_ansvar}
 
 \begin{enumerate}
@@ -281,13 +399,21 @@ Att Elsäkerhetsverket får information om vilka företag som de får utöva til
     som krävs för att garantera att arbetet inte ger en risk för person- eller egendomsskada
 \end{enumerate}
 
-\setcounter{section}{57}
+\section{Vad består regelverket av?}
+\label{sec:q_57}
+
+Det består av  detaljerande regler om arbetsmiljön.
+
 \section{Vad är skillnaden mellan en lågspänningsanläggning och en högspänningsanläggning?}
 
 Spänningen, allt med en spänning $0 < U <1000$ V räknas som lågspänning, från 1 kV högspänning.
 
-\setcounter{section}{59}
-\section{Vad menas med utsatt del?}
+\section{Vad är en starkströmsanläggning?}
+\label{sec:q_59}
+
+Det är en anläggning som sitter på spänning, strömstyrka eller frekvens som kan vara farlig för individer och dess egendom.
+
+\section{Vad menas med utsatt del?}\label{sec:q_60}
 
 Begreppet definieras i ELSÄK-FS 2008:1 kap 1 paragraf 3 definitioner som:
 
@@ -299,18 +425,35 @@ Begreppet definieras i ELSÄK-FS 2008:1 kap 1 paragraf 3 definitioner som:
   \end{tabular}
 \end{center}
 
-\setcounter{section}{61}
+\section{Hur definierar man direkt och indirekt beröring?}
+\label{sec:q_61}
+
+Indirekt beröring är när en levande varelse berör ett föremål som har blivit strömförande på något sätt.
+
+Direkt beröring, menas att en levande varelse rör en levande ledning där det går ström igenom.
+
 \section{Vilka skydd skyddar mot direkt och indirekt beröring?}
 
-\setcounter{section}{63}
+Apparaters konstruktion med deras isoleringsklass, och skyddsjordning.
+
+\section{Vad betyder ELSÄK-FS?}\label{sec:q_63}
+
+Det är föreskrifter om upphävande av elsäkerhetsverkets föreskrifter och allmänna råd.
+
 \section{Vilken myndighet utarbetar föreskriften ELSÄK-FS 2008:1?}
 
-\setcounter{section}{65}
+\section{Vilken är standarden som behandlar utförande av elinstallationer för lågspänning?}
+\label{sec:q_65}
+
+Denna installationen finner du merparten av de krav och anvisningar som kommer gälla för en normal installation.
+
 \section{Hur många kapitel innehåller ELSÄK-FS 2008:1?}
 
 7 stycken.
 
-\setcounter{section}{67}
+\section{Hur många av dessa kapitel gäller lågspänningsanläggningar? Vad heter och behandlar dessa kapitel?}
+\label{sec:q_67}
+
 \section{Vilka elinstallationsarbeten omfattas inte av elsäkerhetslagen under förutsättning att elinstallationsarbetet inte utförs i potentiellt explosiva miljöer.}
 
 \begin{itemize}
@@ -323,10 +466,9 @@ Begreppet definieras i ELSÄK-FS 2008:1 kap 1 paragraf 3 definitioner som:
 \item Kopplingsarbeten i lab-miljö
 \end{itemize}
 
-\setcounter{section}{68}
 \section{Vad kallas den metod som EIO tagit fram för besiktning av elanläggningar i bostad?}
 
-IN Eltest. IN iom att EIO har bytt namn till Installatörsföretagen.
+Den kallas EIO-eltest, och är en grundlig besiktning av en el-anläggning, då går de igenom alla svaga punkter i ditt fastighet.
 
 \part{Elmaterial}
 
@@ -355,13 +497,21 @@ Detta för att garantera utlösningsvillkoren för huvudsäkringar och jordfelsb
 Har man ett starkt nät med kapacitet att ge mycket ström (kort kabel från närmaste transformator)
 så ställs det högre krav på jordfelsbrytaren.
 
-\setcounter{section}{2}
+\section{Hur avgör man vilken materiel som är lämpligt i olika miljöer?}
+\label{sec:q_m_2}
+
+Genom att se vad för typ av klimat det är, är det fuktigt, varmt, torrt, damm, blixttätt område, inomhus, utomhus, Lagerlokal, familjehus.
+
 \section{Vad betyder IP?}
 
 IP = Ingress Protection code.
 Den grad av skydd mot direkt och indirekt kontakt med strömförande delar som en kapsling ger.
 
-\setcounter{section}{4}
+\section{Hur vet man vilken kapslingsklass ett elmateriel har. Hur ser märkningen ut?}
+\label{sec:q_m_4}
+
+Du kollar vilken ip-klass materialet har. Med denna kan du tolka vad för typ av klimatelement produkten är byggd för.
+
 \section{Vad anger första siffran?}
 
 Skyddsgraden mot inträgning med olika fasta objekt. Exv skyddsklass 0 saknar helt beröringsskydd,
@@ -369,17 +519,29 @@ medan klass 2 innebär att ett ensamt finger inte kan komma åt strömförande d
 
 Nivå 6, då är kapslingen dammtätt.
 
-\setcounter{section}{6}
+\section{Vad anger andra siffran?}
+\label{sec:q_m_6}
+
+Ip klass brukar ha ett nummer bakom sig, denna betäckning avgör om hur pass väl skyddat det är mot vissa klimater, desto högre siffror desto bättre kommer produkten klara av smuts, damm och vatten.
+
 \section{Vilken kapslingsklass ska elmateriel om tillhör ”torra utrymmen” ha?}
 
 
-\setcounter{section}{8}
+\section{Vilka utrymmen tillhör ”torra utrymmen”?}
+\label{sec:q_m_8}
+
+Områden där vatten inte kommer kunna finnas på. Normalt alla rum förutom badrum, duschrum, garage och andra liknande områden.
+
 \section{Vilken kapslingsklass ska elmateriel ha i vissa delar av badrum, grovkök och
   tvättstugor, där risk för överspolning finns?}
 
 I de elmiljöerna där det bedöms att utrustningen kan bli direkt överspolade med vatten, krävs det minst IPx4.
 
-\setcounter{section}{10}
+\section{Vad kallas varje enskild tråd i en flerledarkabel?}
+\label{sec:q_m_10}
+
+Det kallas Kardel
+
 \section{Av vilka delar består en kabel?}
 
 \begin{enumerate}
@@ -388,7 +550,12 @@ I de elmiljöerna där det bedöms att utrustningen kan bli direkt överspolade 
 \item mantel/ytterskal hölje för kabeln
 \end{enumerate}
 
-\setcounter{section}{12}
+\section{Varför använder man halogenfri materiel som isolermaterial på kabel?}
+\label{sec:q_m_12}
+
+Dessa använder du på offentliga ställen där människor kommer befinna sig, dessa kablar är bättre än
+vanliga kablar eftersom de klarar av brandsäkerheten bättre samt är mindre skadliga.
+
 \section{Varför förser man kablar med en skärm av tex aluminiumfolie?}
 
 Kontroll av magnetiska fält runt om kabeln och möjligt att använda den vid kabelsökning
@@ -396,12 +563,20 @@ och provning och felsökning av kabeln. Det ställs exv krav på isolationsmätn
 Vid den mätningen så kan man lägga en hög spänning på skärm för att kontrollera isoleringen
 mellan den och trådarna (ansluten utrustning till kabeln kopplas bort från den först.)
 
-\setcounter{section}{14}
+\section{Vad betyder FK?}
+\label{sec:q_m_14}
+
+FK står för Fåtrådig (några kardeller för en ledare) Cu koppar och K står för PVC som är ledarens isolerade material.
+
 \section{Vad betyder EKK?}
 
 Enkelkardelig dvs varje ledare består av en massiv ledare där ledareisoleringen är PVC
 
-\setcounter{section}{16}
+\section{Vad betyder EKKJ?}
+\label{sec:q_m_16}
+
+Denna beteckning är en jordkabel och är pvc isolerad, pvc täckt, avskärm kraftkabel och färgtmärkt kopparledning.
+
 \section{Vad anger första bokstaven?}
 
 Om ledarna i kabel är :
@@ -411,12 +586,19 @@ Om ledarna i kabel är :
 \item R = rikkardlig, många tunna trådar
 \end{enumerate}
 
-\setcounter{section}{18}
+\section{Andra bokstaven?}
+\label{sec:q_m_18}
+
+Skärmad kraftkabel.
+
 \section{Tredje bokstaven?}
 
 
+\section{Och till sist fjärde bokstaven?}
+\label{sec:q_m_20}
 
-\setcounter{section}{20}
+Färgmärkt kopparledning.
+
 \section{Vad gäller i den nya CPR-klassningen för brandskydd?}
 
 Innan Juli 2017 omfattade CPR-klassningen enbart risken för brandspridning.
@@ -433,31 +615,72 @@ Den nuvarande CPR-klassningen differentierar mellan:
   \end{enumerate}
 \end{center}
 
-\setcounter{section}{22}
+\section{Vilken är den vanligaste kategorin på kommunikationskabel?}
+\label{sec:q_m_22}
+
+UTP, står för unshielded twister pair, oskärmad tvinnad parkabel.
+
 \section{Till vad används kraftkablar?}
 
 Överföring och distribution av el, minsta area i varje tråd är $2,5 mm^2$
 
-\setcounter{section}{24}
+\section{Till vad används installationskablar?}
+\label{sec:q_m_24}
+
+Används till elinstallationer av olika slag, vanligaste kabeln för installation inom och utomhus för lågspänningsanläggningar såsom hushåll.
+
 \section{Till vad används anslutningskablar?}
 
 Anslutning av apparater till sina matningar. Den stora skillnaden jämfört med kraftkabel är anslutningskablars
 tålighet mot vibrationer och böjning.
 
-\setcounter{section}{26}
+\section{Till vad används kommunikationskablar}
+\label{sec:q_m_26}
+
+Används till kommunikation, såsom ljudkommunikation och singalöverföring.
+
 \section{Till vad används signalkablar?}
 
 Används i diverse styr-tillämpningar där strömmarna är låga.
 Larmsystem och reglersystem är exempel.
 
-\setcounter{section}{28}
+\section{Till vad används värmekablar?}
+\label{sec:q_m_28}
+
+Används till golvvärme, frostskydd i vattenrör, snöfria markytor. Även till industriapparater
+
 \section{Vilken är biledaren funktion?}
 
-\setcounter{section}{30}
+\section{Hur ska biledaren vara märkt?}
+\label{sec:q_m_30}
+
+Den får ej vara märkt med gul-grönt alltså jordad färg då den ej uppfyller de krav som krävs för jordad kabel, allt annat är okej.
+
 \section{Vad undviker man genom att ansluta biledaren till skyddsjord i ena änden på
 kabeln?}
 
-\setcounter{section}{32}
+Magnetiska fält och av de orsakade störningar.
+
+Det kan exv induceras strömmar i svagströmsförbindelser i närheten.
+Har hört en beskrivning av vådan med att ha en Ethernet 802.3a i samma schakt som
+en starkströmskabel. Det var inducerat 100 V i den koaxialkabeln.
+
+\section{Hur många materielklasser finns det?}
+\label{sec:q_m_32}
+
+Finns i fyra olika klasser.
+
 \section{Hur betecknar man dessa materielklasser?}
+
+\begin{itemize}
+\item I   skyddet baseras förutom på elektrisk isolering av innanmätet även på skyddsjordning av höljet
+\item II, dubbelisolerad (eller eventuellt förstärkt isolering) apparat
+\item III, skyddet baseras på att produkten används i ett nät med skyddslågspänning (SEL)
+\end{itemize}
+
+\section{Vad har varje elprodukt för något i grossistkatalogen? Motivera med några konkreta exempel.}
+\label{sec:q_m_34}
+
+E-nummer.
 
 \end{document}
